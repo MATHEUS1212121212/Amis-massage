@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
 
 }
@@ -11,38 +10,4 @@ li a {
     font-family: Arial, Helvetica;
     color: #fc4903;
    
-=======
-* {
-    text-align: center;
-    background-color: grey;;
-}
-
-.colorstuff {
-    background-color: #ff86b6;
-    border: solid 3px black;
-    border-radius: 25px;
-    width: 180px;
-    height: 30px;
-}
-
-#dropdownMenuButton {
-    background-color: #ff86b6;
-    border: solid 3px black;
-    color: rgb(0, 0, 0);
-}
-
-#submit {
-    border-radius: 25px;
-    background-color: #ff86b6;
-    border: solid 3px black;
-    width: 100px;
-    height: 50px;
-    color: rgb(0, 0, 0);
-}
-
-#date {
-    background-color: #ff86b6;
-    color: rgb(0, 0, 0);
-    border: solid 3px #000000;
->>>>>>> 9f5080a281d693e3516a60b067d6cc3e21adb1ab
 }
