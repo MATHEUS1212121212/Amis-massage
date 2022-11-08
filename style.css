@@ -1,3 +1,7 @@
+* {
+
+}
+
 body{
 
 }
@@ -6,8 +10,3 @@ img {
     width: 100%;
 }
 
-li a {
-    font-family: Arial, Helvetica;
-    color: #fc4903;
-   
-}
