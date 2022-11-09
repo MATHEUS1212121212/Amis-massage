@@ -1,21 +1,11 @@
+
 #formcss {
     text-align: center;
     background-color: grey;
+    
 }
 
-.colorstuff {
-    background-color: #ff86b6;
-    border: solid 3px black;
-    border-radius: 25px;
-    width: 180px;
-    height: 30px;
-}
 
-#dropdownMenuButton {
-    background-color: #ff86b6;
-    border: solid 3px black;
-    color: rgb(0, 0, 0);
-}
 
 #submit {
     border-radius: 25px;
@@ -33,6 +23,11 @@
 }
 
 #massages {
+    background-color: #ff86b6;
+    border: solid 3px #000000;
+}
+
+.colorstuff {
     background-color: #ff86b6;
     border: solid 3px #000000;
 }

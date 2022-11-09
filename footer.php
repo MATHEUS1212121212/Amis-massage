@@ -10,10 +10,10 @@
 <body>
 
 
-<footer class="page-footer font-small blue pt-4 color">
+<footer class="page-footer font-small blue pt-4 footercolor">
 
   
-  <div class="container-fluid text-center text-md-left">
+  <div class="container-fluid text-center text-md-left ">
 
    
     <div class="row">
@@ -82,8 +82,8 @@
   
 
   
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <p>Matheus</p>
+  <div class="colorblack footer-copyright text-center py-3">© 2020 Copyright:
+    <p class="colorblack">Matheus</p>
   </div>
  
 
