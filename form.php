@@ -12,19 +12,17 @@
 
 <?php
 include 'includes/config.php';
-
-
 ?>
+  <?php
+  include 'header.php';
+  ?>
 
 <div id="formcss">
 <form method="post" action="">
 
-  <?php
-  include 'header.php';
 
-  ?>
 
-  <label for="Fornamn">Förnamn</label><br>
+  <label id="mt" for="Fornamn">Förnamn</label><br>
   <input class="colorstuff" type="text" id="Fornamn" name="Fornamn" value=""><br><br>
 
 
@@ -43,10 +41,10 @@ include 'includes/config.php';
   
   <label for="messages">Typ av massage:</label><br>
 
-<select name="massages" id="massages">
-  <option value="">klassisk</option>
-  <option value="">Sport massage</option>
-  <option value="">Fysio therapi</option>
+<select name="TypAvMassage" id="TypAvMassage">
+  <option value="Klassisk">Klassisk</option>
+  <option value="Sport massage">Sport massage</option>
+  <option value="Fysio therapi">Fysio therapi</option>
 </select><br><br>
 
 
@@ -55,15 +53,15 @@ include 'includes/config.php';
 
   <input id="submit" type="submit" name="article-submit" value="Send"><br>
 
-  <?php
-  include 'footer.php';
-?>
+
 
 </form>
 </div>
 </div>
 </div>
-
+<?php
+  include 'footer.php';
+?>
 <?php
 
 function cleanInput($data) {
@@ -91,15 +89,6 @@ if(isset($_POST['article-submit'])){
 	$Telefonnummer = cleanInput($_POST['Telefonnummer']);
 	
 
-	echo $Fornamn . "<br>";
-  echo $Efternamn . "<br>";
-  echo $Starttid . "<br>";
-  echo $Sluttid . "<br>";
-  echo $TypAvMassage . "<br>";
-	echo $Datum . "<br>";
-  echo $Telefonnummer . "<br>";
-	
-
 
 	$stmt_insertbokningar = $conn->prepare("INSERT INTO bokningar (Datum, Starttid, Sluttid, TypAvMassage, Fornamn, Efternamn, Telefonnummer) VALUES (:Datum, :Starttid, :Sluttid, :TypAvMassage, :Fornamn, :Efternamn, :Telefonnummer)");
 	$stmt_insertbokningar->bindParam(':Datum', $Datum, PDO::PARAM_STR);
@@ -111,7 +100,7 @@ if(isset($_POST['article-submit'])){
   $stmt_insertbokningar->bindParam(':Telefonnummer', $Telefonnummer, PDO::PARAM_STR);
 
 	if($stmt_insertbokningar->execute()) {
-		echo "<p id='color'>Article created successfully</p>";
+		//echo "<p id='color'>Article created successfully</p>";
 		
 	}
 

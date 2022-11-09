@@ -3,10 +3,14 @@
     height: 200px;
     padding: 0px;
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 0px;
     color: white;
 }
 
 .colorblack {
     color:black;
+}
+
+p {
+    
 }

@@ -23,10 +23,10 @@
           <a class="nav-link active colorwhite" aria-current="page" href="form.php" >Bookings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link colorwhite" href="#">Reservation</a>
+          <a class="nav-link colorwhite" href="bokningar.php">Reservation</a>
         </li>
     </ul>
     </div>
   </div>
-</nav>
+</nav><br>
 

@@ -1,33 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Dancing+Script&family=Dongle:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=League+Spartan:wght@100;200&family=Neonderthaw&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@1,700&family=Roboto+Slab:wght@200;500;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Beastly&family=Sansita+Swashed:wght@300&family=Xanh+Mono&display=swap');
+
+*{
+    font-family: Roboto Slab;
+}
 
 #formcss {
     text-align: center;
-    background-color: grey;
-    
+    background-color: rgb(206, 157, 116);
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 10px;
 }
 
-
+#wholeting {
+    background-color: #ffcb86;
+    height: 110%;
+}
 
 #submit {
     border-radius: 25px;
-    background-color: #ff86b6;
+    background-color: #ffcb86;
     border: solid 3px black;
     width: 100px;
     height: 50px;
     color: rgb(0, 0, 0);
+    margin-bottom: 10px;
 }
 
 #date {
-    background-color: #ff86b6;
+    background-color: #ffcb86;
     color: rgb(0, 0, 0);
     border: solid 3px #000000;
 }
 
-#massages {
-    background-color: #ff86b6;
+#TypAvMassage {
+    background-color: #ffcb86;
     border: solid 3px #000000;
 }
 
 .colorstuff {
-    background-color: #ff86b6;
+    background-color: #ffcb86;
     border: solid 3px #000000;
+}
+
+#mt {
+    padding-top: 10px;
+}
+
+#pad {
+    
 }
