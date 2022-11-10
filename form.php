@@ -83,7 +83,7 @@ if(isset($_POST['article-submit'])){
 	$Datum = cleanInput($_POST['Datum']);
   $Starttid = cleanInput($_POST['Starttid']);
 	$Sluttid = cleanInput($_POST['Sluttid']);
-	$TypAvMassage = cleanInput($_POST['massages']);
+	$TypAvMassage = cleanInput($_POST['TypAvMassage']);
   $Fornamn = cleanInput($_POST['Fornamn']);
 	$Efternamn = cleanInput($_POST['Efternamn']);
 	$Telefonnummer = cleanInput($_POST['Telefonnummer']);

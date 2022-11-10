@@ -29,6 +29,5 @@ $queryResult = $conn->query("SELECT * FROM bokningar");
 }
 ?>
 </div>
-
 <?php include 'footer.php';?>
 </div>

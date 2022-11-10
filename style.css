@@ -16,3 +16,17 @@ img {
 .colorwhite {
     color: white !important;
 }
+
+.bkclr {
+    background-color: #ffcb86;
+    padding: 0px;
+    margin: 0px;
+}
+
+#more {
+    background-color: #ffcb86;
+}
+
+.movedown {
+     margin-top:10px;
+}

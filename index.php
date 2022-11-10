@@ -1,10 +1,11 @@
-
+<link rel="stylesheet" href="style.css">
+<div id="more">
 <?php 
 include "header.php";
 ?>
 
-<div class="container">
-    <div class="row">
+<div class="container-fluid bkclr">
+    <div class="row movedown">
        
         <div class="col">
             <img src="images/bild1.jpg" alt="">
@@ -22,9 +23,9 @@ include "header.php";
 
 </div>
 
-
+<br>
 <?php
     include 'footer.php';
 ?>
-
+</div>
 </body>
