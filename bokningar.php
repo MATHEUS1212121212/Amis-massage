@@ -10,24 +10,68 @@
 <?php include 'header.php';
 include 'includes/config.php';
 ?>
-<div class="margins">
+
+<div class="container">
+
 <?php
-$queryResult = $conn->query("SELECT * FROM bokningar");
-	
-	
+$todaysdate = date("Y-m-d");
+
+
+$queryResult = $conn->query("SELECT * FROM bokningar WHERE Datum = curdate() ORDER BY Starttid;");
+
+
+echo "<div class='row'><div class='col ok m-2'><h2 class='textcenter'>Today</h2>";
     foreach ($queryResult as $row)
 {
     echo "<div class='container'>";
-    echo "<div class='row ok'><h2 id='sizechange'>" . $row['Datum'] . "</h2>";
-    echo "<p class='col ok1'>" . $row['Fornamn'] . "</p>";
-    echo "<p class='col ok1'>" . $row['Efternamn'] . "</p>";
-    echo "<p class='col ok1'>" . $row['Telefonnummer'] . "</p>";
-    echo "<p class='col ok1'>" . $row['TypAvMassage'] . "</p>";
-    echo "<p class='col ok1'>" . $row['Starttid'] . "</p>";
-    echo "<p class='col ok1'>" . $row['Sluttid'] . "</p>";
-    echo "</div> </div>";
+    echo "<div class='row'>";
+    echo "<h2 id='sizechange'>" . $row['Datum'] . "</h2>";
+    echo "<p class='col ok1'><strong>Namn: </strong>" . $row['Fornamn'] ." ". $row['Efternamn'] .'<br>'."<strong> Telefonnummer: </strong>". $row['Telefonnummer'] . "</p>";
+    echo "<p class='col ok1'><strong>Typ av massage: </strong>" . $row['TypAvMassage'] . '<br>'."<strong> Starttid </strong>". $row['Starttid'] . '<br>' ."<strong> Sluttid </strong>". $row['Sluttid'] . "</p>";
+    echo "</div>";
+    echo "</div>";
 }
+echo "</div>";
+
+
+$queryResult2 = $conn->query("SELECT * FROM bokningar WHERE Datum = curdate() +1 ORDER BY Starttid");
+
+
+echo "<div class='col ok m-2'><h2 class='textcenter'>Tomorrow</h2>";
+    foreach ($queryResult2 as $row)
+{
+    echo "<div class='container'>";
+    echo "<div class='row'>";
+    echo "<h2 id='sizechange'>" . $row['Datum'] . "</h2>";
+    echo "<p class='col ok1'><strong>Namn: </strong>" . $row['Fornamn'] ." ". $row['Efternamn'] .'<br>'."<strong> Telefonnummer: </strong>". $row['Telefonnummer'] . "</p>";
+    echo "<p class='col ok1'><strong>Typ av massage: </strong>" . $row['TypAvMassage'] . '<br>'."<strong> Starttid </strong>". $row['Starttid'] . '<br>' ."<strong> Sluttid </strong>". $row['Sluttid'] . "</p>";
+    echo "</div>";
+    echo "</div>";
+}
+echo "</div>";
+
+$queryResult2 = $conn->query("SELECT * FROM bokningar ORDER BY Datum");
+
+
+echo "<div class='col ok m-2'><h2 class='textcenter'>All</h2>";
+    foreach ($queryResult2 as $row)
+{
+    echo "<div class='container'>";
+    echo "<div class='row'>";
+    echo "<h2 id='sizechange'>" . $row['Datum'] . "</h2>";
+    echo "<p class='col ok1'><strong>Namn: </strong>" . $row['Fornamn'] ." ". $row['Efternamn'] .'<br>'."<strong> Telefonnummer: </strong>". $row['Telefonnummer'] . "</p>";
+    echo "<p class='col ok1'><strong>Typ av massage: </strong>" . $row['TypAvMassage'] . '<br>'."<strong> Starttid </strong>". $row['Starttid'] . '<br>' ."<strong> Sluttid </strong>". $row['Sluttid'] . "</p>";
+    echo "</div>";
+    echo "</div>";
+}
+echo "</div>";
+
+echo "</div>";
 ?>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 <?php include 'footer.php';?>
-</div>

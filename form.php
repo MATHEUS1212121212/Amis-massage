@@ -13,6 +13,7 @@
 <?php
 include 'includes/config.php';
 ?>
+
   <?php
   include 'header.php';
   ?>
@@ -24,6 +25,7 @@ include 'includes/config.php';
 
   <label id="mt" for="Fornamn">Förnamn</label><br>
   <input class="colorstuff" type="text" id="Fornamn" name="Fornamn" value=""><br><br>
+  
 
 
   <label for="Efternamn">Efternamn</label><br>

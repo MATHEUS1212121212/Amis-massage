@@ -7,14 +7,14 @@
 #formcss {
     text-align: center;
     background-color: rgb(206, 157, 116);
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
     border-radius: 10px;
 }
 
 #wholeting {
     background-color: #ffcb86;
-    height: 110%;
+    height: 122%;
 }
 
 #submit {
@@ -45,8 +45,4 @@
 
 #mt {
     padding-top: 10px;
-}
-
-#pad {
-    
 }
